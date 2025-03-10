@@ -6,9 +6,8 @@ Official repo for `Towards Interpretable Protein Structure Prediction with Spars
 
 This repository contains code for training and evaluating Sparse Autoencoders, with a focus on protein structure prediction tasks. The project includes components for:
 
-- Training SAE models with configurable parameters
-- Evaluating RMSD (Root Mean Square Deviation) for protein structure predictions
-- Integration with ESMF (ESM Fold) predictions
+- Training SAE models on protein language model embeddings.
+- Evaluating RMSD (Root Mean Square Deviation) for protein structure prediction on CASP14.
 
 ## Project Structure
 
