@@ -1,0 +1,25 @@
+# Core model architecture
+dict_class: "AutoEncoderTopK"
+trainer_class: "TopKTrainer" 
+activation_dim: null  # Set in train.yaml
+dict_size: null      # Set in train.yaml
+
+# Training parameters
+lr: 1e-4
+warmup_steps: 1000
+steps: null          # Required
+decay_start: null    # Set to steps//2 at runtime
+auxk_alpha: 0.03125 # 1/32 as in Gao et al.
+threshold_beta: 0.999 # Default in `dictionary_learning/trainers/top_k.py`
+threshold_start_step: 1000 # Default in `dictionary_learning/trainers/top_k.py`
+
+# Model configuration
+seed: 0
+device: "cuda"
+layer: null         # Required
+lm_name: null      # Required
+k: 100               # Number of features to keep per batch
+
+# Logging
+wandb_name: null   # Optional
+submodule_name: null  # Optional, "embed" if using embeddings

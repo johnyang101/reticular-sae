@@ -1,0 +1,6 @@
+defaults:
+  - 8M_L3_1_shard_opt
+
+optimized_dir: ${datamodule.s3_bucket_uri}/optimized/8m_3_100_shards
+
+buckets_per_epoch: 12622

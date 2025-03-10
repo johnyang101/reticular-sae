@@ -1,0 +1,13 @@
+defaults:
+  - train_default
+  - sae_trainer_cfg: top_k
+  # - datamodule: 8M_10M_opt
+
+# Trainer cfg parameters
+sae_trainer_cfg:
+  activation_dim: ${datamodule.activation_dim}
+  dict_size: 10240
+  # steps: ${datamodule.steps} #NOTE: Handling at runtime, multiplying epochs by steps per epoch
+  # decay_start: null
+  layer: ${datamodule.layer_number}
+  lm_name: ${datamodule.model_type} 

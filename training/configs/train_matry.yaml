@@ -1,0 +1,12 @@
+defaults:
+  - train_default
+  - sae_trainer_cfg: matry_batch_top_k
+
+# Trainer cfg parameters
+sae_trainer_cfg:
+  activation_dim: ${datamodule.activation_dim}
+  dict_size: 10240
+  # steps: ${datamodule.steps}
+  # decay_start: null
+  layer: ${datamodule.layer_number}
+  lm_name: ${datamodule.model_type} 

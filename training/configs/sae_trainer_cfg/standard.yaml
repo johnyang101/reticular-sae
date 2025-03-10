@@ -1,0 +1,24 @@
+# Core model architecture
+dict_class: "AutoEncoder"
+trainer_class: "StandardTrainer"
+activation_dim: null  # Set in train.yaml
+dict_size: null      # Set in train.yaml
+
+# Training parameters
+lr: 1e-7
+l1_penalty: 1e-1
+warmup_steps: 10000  # Min(10000, steps//10)
+resample_steps: null
+sparsity_warmup_steps: 10000  # Min(10000, steps//10) 
+steps: null          # Required
+decay_start: null    # Set to steps//2 at runtime
+
+# Model configuration
+seed: 0
+device: "cuda"
+layer: null         # Required
+lm_name: null      # Required
+
+# Logging
+wandb_name: null   # Optional
+submodule_name: null  # Optional, "embed" if using embeddings

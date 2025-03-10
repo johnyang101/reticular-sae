@@ -1,0 +1,9 @@
+defaults:
+  - _self_
+
+s3_bucket_uri: s3://uniref50-embeds
+
+normalize_activations: true
+norm_factor_avging_steps: 100
+center_activations: false
+shuffle: true
