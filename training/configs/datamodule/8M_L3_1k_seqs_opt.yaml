@@ -5,7 +5,7 @@ model_type: "8m"
 layer_number: 3
 activation_dim: 320
 
-optimized_dir: ${datamodule.s3_bucket_uri}/optimized/8m_3_1_shards/
+optimized_dir: ${datamodule.s3_bucket_uri}/litdata-datasets/8m_layer_3_1k_seqs/
 
 toks_per_bucket: 2048
 buckets_per_epoch: 116
