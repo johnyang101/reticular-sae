@@ -1,15 +1,21 @@
-# Reticular SAE
+# SAEFold by Reticular (YC F24)
 
-Official repo for `Towards Interpretable Protein Structure Prediction with Sparse Autoencoders` accepted to ICLR 2025 workshops.
+## Introduction
 
-#TODO: Add visualizer at sae.reticular.ai
+SAEFold enables mechanistic interpretability on ESMFold, a protein structure prediction model, for the first time using sparse autoencoders (SAEs) trained on ESM2-3B. 
+
+For more details, see our paper published at ICLR 2025 workshops linked below. All code and pretrained models are provided under the Apache 2.0 license, making them freely available for both academic and commercial use.
+
+🔍 **Paper**: Coming soon on ArXiv \
+🌐 **Interactive Visualizations**: [sae.reticular.ai](https://sae.reticular.ai) \
+🏢 **More about Reticular**: [reticular.ai](https://reticular.ai)
 
 ## Overview
 
-This repository contains code for training and evaluating Sparse Autoencoders, with a focus on protein structure prediction tasks. The project includes components for:
+This repository contains code for training and evaluating SAEs, with a focus on protein structure prediction tasks. The project includes components for:
 
-- Training SAE models on protein language model embeddings.
-- Evaluating RMSD (Root Mean Square Deviation) for protein structure prediction on CASP14.
+- Training your own protein SAEs out-of-the-box on embeddings from 100K sequences hosted on our public S3 bucket.
+- Evaluating SAEFold's protein structure prediction recovery on CASP14.
 
 ## Project Structure
 
@@ -24,17 +30,38 @@ reticular-sae/
     └── rmsd_eval.py           # RMSD evaluation for protein structures
 ```
 
-## Setup
+## Installation
 
-1. Clone the repository
-2. Install dependencies
+1. Clone the repository.
+
+2. Install dependencies.
+   ```bash
+   # First, install dependencies for the dictionary learning submodule
+   cd dictionary_learning
+   pip install -r requirements.txt
+   
+   # Then, install the main package
+   cd ../
+   pip install -e .
+   ```
+
 3. Sign into AWS CLI to access ESM2 embeddings stored in public S3 bucket.
+   ```bash
+   aws configure
+   ```
 
 ## Usage
 
 ### Training
 
 To train a Matryoshka SAE model, the `test_training_command.sh` script will call `training/train.py` and should run out of the box.
+
+### Load Pretrained Models
+We provide pretrained Matryoshka SAE models in the `pretrained_models` directory. These can be loaded using the following code:
+```python
+from dictionary_learning.matryoshka_batch_top_k import MatryoshkaBatchTopKSAE
+pretrained_model = MatryoshkaBatchTopKSAE.from_pretrained(ckpt_path)
+```
 
 ### Evaluation
 
@@ -53,3 +80,7 @@ The project uses Hydra for configurations. Key configuration options include:
 ## License
 
 This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
+
+## Citation
+
+Coming soon!
