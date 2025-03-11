@@ -2,6 +2,8 @@
 
 Official repo for `Towards Interpretable Protein Structure Prediction with Sparse Autoencoders` accepted to ICLR 2025 workshops.
 
+#TODO: Add visualizer at sae.reticular.ai
+
 ## Overview
 
 This repository contains code for training and evaluating Sparse Autoencoders, with a focus on protein structure prediction tasks. The project includes components for:

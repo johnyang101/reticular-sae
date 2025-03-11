@@ -1,0 +1,11 @@
+defaults:
+  - base
+
+model_type: "3b"
+layer_number: 36
+activation_dim: 2560
+
+optimized_dir: ${datamodule.s3_bucket_uri}/litdata-datasets/3b_layer_36_100k_seqs/
+
+toks_per_bucket: 2048
+buckets_per_epoch: 18612
