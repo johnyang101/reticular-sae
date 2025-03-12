@@ -50,6 +50,14 @@ reticular-sae/
    aws configure
    ```
 
+4. (Optional) Initialize Weights and Biases (WandB) \
+
+    Run
+    ```bash
+    wandb init
+    ```
+    and set `use_wandb` to True in `training/configs/train_default.yaml`
+
 ## Usage
 
 ### Training
