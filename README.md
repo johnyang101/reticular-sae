@@ -4,7 +4,7 @@
 
 SAEFold enables mechanistic interpretability on ESMFold, a protein structure prediction model, for the first time using sparse autoencoders (SAEs) trained on ESM2-3B. 
 
-For more details, see our paper published at ICLR 2025 workshops linked below. All code and pretrained models are provided under the Apache 2.0 license, making them freely available for both academic and commercial use.
+For more details, see our paper published at the ICLR 2025 GEMBIO workshop linked below. All code and pretrained models are provided under the Apache 2.0 license, making them freely available for both academic and commercial use.
 
 🔍 **Paper**: Coming soon on ArXiv \
 🌐 **Interactive Visualizations**: [sae.reticular.ai](https://sae.reticular.ai) \
@@ -12,7 +12,7 @@ For more details, see our paper published at ICLR 2025 workshops linked below. A
 
 ## Overview
 
-This repository contains code for training and evaluating SAEs, with a focus on protein structure prediction tasks. The project includes components for:
+This repository contains code for training and evaluating SAEs for protein structure prediction, primarily for
 
 - Training your own protein SAEs out-of-the-box on embeddings from 100K sequences hosted on our public S3 bucket.
 - Evaluating SAEFold's protein structure prediction recovery on CASP14.
