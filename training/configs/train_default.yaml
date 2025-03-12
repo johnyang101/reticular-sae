@@ -19,10 +19,10 @@ eval_steps: 10000
 eval_start_step: 10000
 
 # Weights & Biases logging
-use_wandb: true
-wandb_entity: "reticular"
-wandb_project: "interviews"
-wandb_name: "default_wandb_name"
+use_wandb: false
+wandb_entity: "your-wandb-entity"
+wandb_project: "your-wandb-project"
+wandb_name: "your-wandb-name"
 
 # Checkpointing
 save_dir: "ckpts/"
