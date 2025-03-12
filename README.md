@@ -59,7 +59,7 @@ To train a Matryoshka SAE model, the `test_training_command.sh` script will call
 ### Load Pretrained Models
 We provide pretrained Matryoshka SAE models in the `pretrained_models` directory. These can be loaded using the following code:
 ```python
-from dictionary_learning.matryoshka_batch_top_k import MatryoshkaBatchTopKSAE
+from dictionary_learning.trainers.matryoshka_batch_top_k import MatryoshkaBatchTopKSAE
 pretrained_model = MatryoshkaBatchTopKSAE.from_pretrained(ckpt_path)
 ```
 
