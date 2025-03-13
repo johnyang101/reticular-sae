@@ -97,7 +97,7 @@ If you use SAEFold in your research, please cite our paper:
 @inproceedings{parsan2025interpretableproteinstructureprediction,
     title     = {Towards Interpretable Protein Structure Prediction with Sparse Autoencoders},
     author    = {Parsan, Nithin and Yang, David J. and Yang, John J.},
-    booktitle = {ICLR 2025 Workshop on Geometric and Topological Machine Learning in Biology (GEMBIO)},
+    booktitle = {ICLR 2025 Workshop on Generative and Experimental Perspectives for Biomolecular Design (GEMBIO)},
     year      = {2025},
     eprint    = {2503.08764},
     archivePrefix = {arXiv},
