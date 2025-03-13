@@ -4,7 +4,7 @@
 
 SAEFold enables mechanistic interpretability on ESMFold, a protein structure prediction model, for the first time using sparse autoencoders (SAEs) trained on ESM2-3B. 
 
-For more details, see our paper published at the ICLR 2025 GEMBIO workshop linked below. All code and pretrained models are provided under the Apache 2.0 license, making them freely available for both academic and commercial use.
+For more details, see our paper published at the ICLR 2025 GEM workshop linked below. All code and pretrained models are provided under the Apache 2.0 license, making them freely available for both academic and commercial use.
 
 📄 **Paper**: [ArXiv Link](https://arxiv.org/abs/2503.08764) \
 🔍 **Interactive Visualizations**: [sae.reticular.ai](https://sae.reticular.ai) \
@@ -97,7 +97,7 @@ If you use SAEFold in your research, please cite our paper:
 @inproceedings{parsan2025interpretableproteinstructureprediction,
     title     = {Towards Interpretable Protein Structure Prediction with Sparse Autoencoders},
     author    = {Parsan, Nithin and Yang, David J. and Yang, John J.},
-    booktitle = {ICLR 2025 Workshop on Generative and Experimental Perspectives for Biomolecular Design (GEMBIO)},
+    booktitle = {ICLR 2025 Workshop on Generative and Experimental Perspectives for Biomolecular Design (GEM)},
     year      = {2025},
     eprint    = {2503.08764},
     archivePrefix = {arXiv},
