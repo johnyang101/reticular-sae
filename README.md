@@ -69,6 +69,8 @@ We provide pretrained Matryoshka SAE models in the `pretrained_models` directory
 ```python
 from dictionary_learning.trainers.matryoshka_batch_top_k import MatryoshkaBatchTopKSAE
 pretrained_model = MatryoshkaBatchTopKSAE.from_pretrained(ckpt_path)
+#Checkpoints must be unnormalized to use for downstream tasks.
+pretrained_model.scale_biases(norm_factor)
 ```
 
 ### Evaluation
