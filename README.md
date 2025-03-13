@@ -6,13 +6,13 @@ SAEFold enables mechanistic interpretability on ESMFold, a protein structure pre
 
 For more details, see our paper published at the ICLR 2025 GEMBIO workshop linked below. All code and pretrained models are provided under the Apache 2.0 license, making them freely available for both academic and commercial use.
 
-🔍 **Paper**: Coming soon on ArXiv \
-🌐 **Interactive Visualizations**: [sae.reticular.ai](https://sae.reticular.ai) \
+📄 **Paper**: [ArXiv Link](https://arxiv.org/abs/2503.08764) \
+🔍 **Interactive Visualizations**: [sae.reticular.ai](https://sae.reticular.ai) \
 🏢 **More about Reticular**: [reticular.ai](https://reticular.ai)
 
 ## Overview
 
-This repository contains code for training and evaluating SAEs for protein structure prediction, primarily for
+This repository contains code for training and evaluating SAEs, with a focus on protein structure prediction tasks. The project includes components for:
 
 - Training your own protein SAEs out-of-the-box on embeddings from 100K sequences hosted on our public S3 bucket.
 - Evaluating SAEFold's protein structure prediction recovery on CASP14.
@@ -89,6 +89,19 @@ The project uses Hydra for configurations. Key configuration options include:
 
 This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
 
-## Citation
+## Citation 📚
 
-Coming soon!
+If you use SAEFold in your research, please cite our paper:
+
+```bibtex
+@inproceedings{parsan2025interpretableproteinstructureprediction,
+    title     = {Towards Interpretable Protein Structure Prediction with Sparse Autoencoders},
+    author    = {Parsan, Nithin and Yang, David J. and Yang, John J.},
+    booktitle = {ICLR 2025 Workshop on Geometric and Topological Machine Learning in Biology (GEMBIO)},
+    year      = {2025},
+    eprint    = {2503.08764},
+    archivePrefix = {arXiv},
+    primaryClass = {q-bio.BM},
+    url       = {https://arxiv.org/abs/2503.08764}
+}
+```
